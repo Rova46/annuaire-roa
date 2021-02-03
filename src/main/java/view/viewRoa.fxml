@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1680.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewController">
+	<children>
+      <GridPane layoutX="11.0" layoutY="105.0" prefHeight="685.0" prefWidth="275.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="100.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+      		<AnchorPane prefHeight="501.0" prefWidth="316.0">
+      			<children>
+                  <GridPane layoutY="57.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+            				<JFXTextField fx:id="tfLocalisation" focusColor="TEAL" onKeyTyped="#searchAll" prefHeight="31.0" prefWidth="316.0" promptText="Votre ville" unFocusColor="TEAL" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            				<JFXTextField fx:id="tfFormation" focusColor="TEAL" onKeyTyped="#searchAll" prefHeight="31.0" prefWidth="316.0" promptText="Votre formation" unFocusColor="TEAL" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            				<JFXTextField fx:id="tfNom" focusColor="TEAL" onKeyTyped="#searchAll" prefHeight="31.0" prefWidth="316.0" promptText="Votre nom" unFocusColor="TEAL" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            				<JFXTextField fx:id="tfPrenom" focusColor="TEAL" onKeyTyped="#searchAll" prefHeight="31.0" prefWidth="316.0" promptText="Votre prénom" unFocusColor="TEAL" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+            				<JFXComboBox fx:id="cbSecteur" focusColor="TEAL" onKeyTyped="#searchAll" prefHeight="31.0" prefWidth="316.0" promptText="Secteurs publique ou privée" unFocusColor="TEAL" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            				<JFXComboBox fx:id="cbSexe" focusColor="TEAL" onKeyTyped="#searchAll" prefHeight="31.0" prefWidth="316.0" promptText="Femme ou Homme" unFocusColor="TEAL" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                        <MaterialDesignIconView fill="TEAL" glyphName="ACCOUNT_LOCATION" size="25" textAlignment="CENTER" GridPane.rowIndex="2" />
+                        <MaterialDesignIconView fill="TEAL" glyphName="WORKER" size="25" GridPane.rowIndex="4" />
+                        <MaterialDesignIconView fill="TEAL" glyphName="SCHOOL" size="25" GridPane.rowIndex="6" />
+                        <FontAwesomeIconView fill="TEAL" glyphName="INTERSEX" size="25" GridPane.rowIndex="8" />
+                        <FontAwesomeIconView fill="TEAL" glyphName="USER" size="25" GridPane.rowIndex="10" />
+                        <MaterialDesignIconView fill="TEAL" glyphName="ACCOUNT" size="25" GridPane.rowIndex="12" />
+                        <JFXTextField fx:id="tfDate" focusColor="TEAL" layoutX="39.0" layoutY="94.0" onKeyTyped="#searchAll" prefHeight="31.0" prefWidth="316.0" promptText="Année universitaire" unFocusColor="TEAL" GridPane.columnIndex="1" />
+                        <FontAwesomeIconView fill="TEAL" glyphName="CALENDAR" size="25" />
+                     </children>
+                  </GridPane>
+      			</children>
+      		</AnchorPane>
+      		<AnchorPane prefHeight="94.0" prefWidth="275.0" GridPane.rowIndex="1">
+      			<children>
+                  <GridPane prefHeight="94.0" prefWidth="263.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="162.0" minWidth="10.0" prefWidth="117.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="162.0" minWidth="10.0" prefWidth="34.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="168.0" minWidth="10.0" prefWidth="120.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+            				<JFXButton fx:id="btAjouter" onAction="#ajouter" prefHeight="39.0" prefWidth="115.0" style="-fx-background-color: teal;" text="Ajouter" textAlignment="CENTER" textFill="WHITE">
+                           <graphic>
+                              <MaterialDesignIconView fill="WHITE" glyphName="ACCOUNT_PLUS" size="25" />
+                           </graphic>
+            				</JFXButton>
+                        <JFXButton fx:id="btModifier" onAction="#modifier" prefHeight="39.0" prefWidth="125.0" style="-fx-background-color: teal;" text="Modifier" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="2">
+                           <graphic>
+                              <MaterialDesignIconView fill="WHITE" glyphName="TABLE_EDIT" size="25" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="btAnnuler" onAction="#annuler" prefHeight="39.0" prefWidth="115.0" style="-fx-background-color: teal;" text="Annuler" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="1">
+                           <graphic>
+                              <MaterialDesignIconView fill="WHITE" glyphName="CLOSE_CIRCLE" size="25" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="btSupprimer" onAction="#supprimer" prefHeight="39.0" prefWidth="124.0" style="-fx-background-color: teal;" text="Supprimer" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <graphic>
+                              <MaterialDesignIconView fill="WHITE" glyphName="DELETE" size="25" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </GridPane>
+                  <JFXCheckBox fx:id="check" alignment="CENTER" checkedColor="TEAL" contentDisplay="CENTER" layoutX="7.0" layoutY="102.0" onMousePressed="#rechercheMulti" prefHeight="21.0" prefWidth="249.0" text="Recherche multi-critères" unCheckedColor="TEAL" />
+      			</children>
+      		</AnchorPane>
+         </children>
+      </GridPane>
+      <GridPane layoutX="308.0" layoutY="79.0" prefHeight="685.0" prefWidth="1098.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="315.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="100.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="18.0" minHeight="8.0" prefHeight="8.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TableView fx:id="table" onMouseClicked="#edit" prefHeight="644.0" prefWidth="795.0" GridPane.rowIndex="2">
+              <columns>
+                <TableColumn fx:id="colDate" prefWidth="75.0" text="Date" />
+                <TableColumn fx:id="colAdresse" prefWidth="147.99996948242188" text="Localisation" />
+                  <TableColumn fx:id="colFormation" prefWidth="157.0" text="Formation" />
+                  <TableColumn fx:id="colTypeEtab" prefWidth="103.0" text="Secteur" />
+                  <TableColumn fx:id="colNom" prefWidth="225.0" text="Nom" />
+                  <TableColumn fx:id="colPrenom" prefWidth="173.0" text="Prénoms" />
+                  <TableColumn fx:id="colGenre" prefWidth="182.0" text="Genre" />
+              </columns>
+            </TableView>
+            <GridPane>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="507.0" minWidth="10.0" prefWidth="466.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="392.0" minWidth="8.0" prefWidth="59.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="608.0" minWidth="10.0" prefWidth="495.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="562.0" minWidth="10.0" prefWidth="48.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+            				<JFXTextField fx:id="tfRechercher" focusColor="TEAL" onKeyTyped="#typeRecherche" prefHeight="31.0" prefWidth="346.0" promptText="Recherche ..." unFocusColor="TEAL" />
+                  <MaterialDesignIconView fill="TEAL" glyphName="ACCOUNT_SEARCH" size="25" GridPane.columnIndex="1" />
+                  <Label fx:id="message" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="491.0" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="Times New Roman Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIconView fx:id="icActualiser" fill="TEAL" glyphName="REFRESH" onMouseClicked="#actualise" size="25" GridPane.columnIndex="3">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </FontAwesomeIconView>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+      <AnchorPane prefHeight="85.0" prefWidth="1680.0" style="-fx-background-color: teal;" AnchorPane.bottomAnchor="715.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutY="3.0" prefHeight="66.0" prefWidth="1680.0" text="ANNUAIRE ROA" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
+               <font>
+                  <Font name="Impact" size="64.0" />
+               </font>
+            </Label>
+            <Label fx:id="datenow" layoutX="14.0" layoutY="9.0" prefHeight="53.0" prefWidth="195.0" textAlignment="CENTER" textFill="#fffbfb">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1405.0" layoutY="195.0" prefHeight="590.0" prefWidth="265.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="1400.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="140.0">
+         <children>
+            <GridPane layoutX="3.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="36.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="255.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="255.0" minHeight="10.0" prefHeight="154.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="115.0" minHeight="10.0" prefHeight="115.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="60.0" minHeight="7.0" prefHeight="23.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="158.0" minHeight="0.0" prefHeight="108.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="255.0" minHeight="10.0" prefHeight="129.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <PieChart fx:id="pcSecteur" labelsVisible="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="110.0" prefWidth="260.0" GridPane.rowIndex="6" />
+                  <PieChart fx:id="pcSexe" labelsVisible="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="130.0" prefWidth="260.0" GridPane.rowIndex="1" />
+                  <GridPane GridPane.rowIndex="2">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.0" minWidth="10.0" prefWidth="106.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.0" minWidth="10.0" prefWidth="154.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="messageHomme" prefHeight="50.0" prefWidth="198.0" textFill="TEAL" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="MessageFemme" layoutX="80.0" layoutY="7.0" prefHeight="21.0" prefWidth="191.0" textFill="TEAL" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <FontAwesomeIconView fill="TEAL" glyphName="MALE" size="50" textAlignment="CENTER" wrappingWidth="63.571428298950195" />
+                        <FontAwesomeIconView fill="TEAL" glyphName="FEMALE" size="50" textAlignment="CENTER" wrappingWidth="65.71428680419922" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.rowIndex="5">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.0" minWidth="10.0" prefWidth="108.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="205.0" minWidth="10.0" prefWidth="152.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="messagePrives" prefHeight="21.0" prefWidth="194.0" textFill="TEAL" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="messagePublic" layoutX="78.0" layoutY="7.0" prefHeight="21.0" prefWidth="194.0" textFill="TEAL" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <MaterialDesignIconView fill="TEAL" glyphName="LOCK" size="50" textAlignment="CENTER" wrappingWidth="69.0" />
+                        <MaterialDesignIconView fill="TEAL" glyphName="LOCK_OPEN" layoutX="10.0" layoutY="64.0" size="50" textAlignment="CENTER" wrappingWidth="68.0" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+                  <Label prefHeight="3.0" prefWidth="262.0" text="------------------------------------------" textFill="TEAL" GridPane.rowIndex="3" />
+                  <Label alignment="CENTER" prefHeight="21.0" prefWidth="309.0" text="GENRE" textAlignment="CENTER" textFill="TEAL">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="28.0" prefWidth="269.0" text="SECTEUR D'ETABLISSEMENT" textAlignment="CENTER" textFill="TEAL" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <FontAwesomeIconView fill="TEAL" glyphName="USERS" layoutX="1411.0" layoutY="143.0" size="40" textAlignment="CENTER" />
+      <Label fx:id="messagUsers" layoutX="1465.0" layoutY="101.0" prefHeight="50.0" prefWidth="208.0" textFill="TEAL">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+	</children>
+</AnchorPane>
