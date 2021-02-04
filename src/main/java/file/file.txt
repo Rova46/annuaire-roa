@@ -5,16 +5,12 @@
 2001-02	Bourg-en-Bresse	Ecoles paramédicales et sociales	Privés	Feminin	VERNU	Martine
 2001-02	Bourg-en-Bresse	Autres écoles de spécialités diverses	Publics	Masculin	DUBOST	Danie
 2001-02	Bourg-en-Bresse	Sections de techniciens supérieurs (STS) et assimilés	Publics	Feminin	DESVAQUET	Nadine
-2001-02	Bourg-en-Bresse	Total des formations d'enseignement supérieur	Publics	Masculin	LLOBELL	André
+2001-02	Bourg-en-Bresse	Total des formations d'enseignement supérieur	Publics	Masculin	LLOBEL	André
 2001-02	Bourg-en-Bresse	Universités	Publics	Feminin	BUET	Roge
-2001-02	Misérieux	Total des formations d'enseignement supérieur	Publics	Feminin	MAISSON	Sylvain
-2001-02	Trévoux	Sections de techniciens supérieurs (STS) et assimilés	Publics	Masculin	TARNAUD	Marie Ange
 2001-02	Chauny	Sections de techniciens supérieurs (STS) et assimilés	Publics	Feminin	BALANCHE	Gwenaelle
 2001-02	Chauny	Total des formations d'enseignement supérieur	Publics	Masculin	BRUCHON	Maryse
 2001-02	Chauny	Total des formations d'enseignement supérieur	Privés	Feminin	BIDAL	Alexandre
-2001-02	Crézancy	Sections de techniciens supérieurs (STS) et assimilés	Publics	Feminin	ELLINGER	Sandrine
 2001-02	Crézancy	Total des formations d'enseignement supérieur	Publics	Masculin	ROBERT	Laurent
-2001-02	Cuffies	Total des formations d'enseignement supérieur	Publics	Masculin	PENSIOT	Bernard
 2001-02	Fontaine-lès-Vervins	Total des formations d'enseignement supérieur	Publics	Masculin	ORSET	Max
 2001-02	Laon	Ecoles paramédicales et sociales	Publics	Masculin	DELACOTE	Philippe
 2001-02	Laon	Sections de techniciens supérieurs (STS) et assimilés	Publics	Feminin	DEYGOUT	Philippe
@@ -2955,14 +2951,9 @@
 2001-02	?vreux	Sections de techniciens supérieurs (STS) et assimilés	Privés	Masculin	RAMOS	Yvonne
 2001-02	?vreux	Universités	Publics	Feminin	JACOB	Véronique
 2001-02	Nogent-le-Rotrou	Total des formations d'enseignement supérieur	Publics	Feminin	JACOB	Yves
-2001-02	Dreux	Sections de techniciens supérieurs (STS) et assimilés	Publics	Feminin	RIBEIRAUD	Marlène
-2001-02	Chartres	Autres écoles de spécialités diverses	Publics	Masculin	VALLIN	Pierre
 2001-02	Chartres	Sections de techniciens supérieurs (STS) et assimilés	Publics	Masculin	MARTINS	Daniel
 2001-02	Chartres	Sections de techniciens supérieurs (STS) et assimilés	Privés	Feminin	REY	Grégory
 2001-02	Châteaulin	Sections de techniciens supérieurs (STS) et assimilés	Publics	Feminin	BALTZ	Thierry
-2001-02	Landivisiau	Total des formations d'enseignement supérieur	Publics	Feminin	CARMINATI	Jean-Pierre
 2001-02	Saint-Pol-de-Léon	Universités	Publics	Masculin	MICHUT	Angélique
 2001-02	Morlaix	Total des formations d'enseignement supérieur	Publics	Feminin	MALEYRIE	Gwendoline
 2001-02	Brest	Ecoles supérieures art et culture	Publics	Masculin	ROGET	Didier
-2001-01	Tsega	Dev	Publics	Masculin	RABE	Rova
-2001-02	Fontaine-lès-Vervins	Total des formations d'enseignement supérieur	Publics	Masculin	ORSET	Max
